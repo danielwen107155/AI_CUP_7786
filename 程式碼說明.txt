@@ -1,0 +1,5 @@
+task1.py是task1任務的程式碼，task1_answer.txt是輸出的答案，task1_answer_timestamps.json是字的時間
+
+task2.py、加時間軸.py、轉BIO.py、轉BIO_ch.py是task2的程式碼，task2_answer.txt.是輸出的答案
+
+訓練是task2訓練的檔案

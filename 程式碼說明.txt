@@ -1,0 +1,28 @@
+程式碼功能:
+task1:
+task1.py是task1任務的程式碼，task1_answer.txt是輸出的答案，task1_answer_timestamps.json是字的時間
+task1.py是把語音轉成 轉成逐字稿和每個音檔字的時間
+
+
+task2:
+task2.py、加時間軸.py、轉BIO.py、轉BIO_ch.py是task2的程式碼，task2_answer.txt.是輸出的答案
+轉BIO跟轉BIO_ch是把逐字稿變成BIO標註的檔案 task2.py是訓練跟預測，加時間軸是預測結束後加上時間軸
+
+訓練是task2訓練的檔案
+
+程式碼說明:
+task1:
+task1.py只要把資料夾路徑設定成音檔的位置跟儲存的位置
+
+task2:
+task2.py 將路徑改成訓練的資料夾跟task1.py出來的逐字稿的資料夾路徑還有儲存的資料夾路徑
+加時間軸.py 將預測出來的檔案加上時間軸 將路徑改成task1得到的task1_answer_timestamps.json的位置和task2.py得到的BIO標註檔
+轉BIO是將給的訓練資料的答案變成BIO格式 將路徑改成訓練資料答案的資料夾路徑
+
+環境設定:
+
+task1:
+Python:3.9.21，WhisperX:3.3.3，torch:2.7.0，tqpm:4.67.1 
+
+task2:
+Python:3.9.21，Numpy:1.23.5，Tensorflow:2.12.0，Scikit-learn:1.6.1，Transformers:4.37.2，Seqeval:1.2.2，Pandas:2.2.3，Bert-base-multilingual-cased
